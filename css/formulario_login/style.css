@@ -11,7 +11,8 @@ body {
     background: #c31432;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    min-width: 320px;
+    max-width: 1328px;
 }
 
 .form-container {
@@ -24,7 +25,6 @@ body {
     border-radius: 10px;
     overflow: hidden;
     transition: all .5s;
-    min-width: 400px;
 }
 
 .form-container .login-container {
@@ -89,6 +89,10 @@ span {
     display: flex;
 }
 
+.providers-icon {
+    display: none;
+}
+
 .btn {
     border: none;
     border-radius: 5px;
@@ -139,7 +143,7 @@ span {
 .welcome-screen-container {
   width: 470px;
   height: 100%;
-  background-image: url('./welcome.jpg');
+  background-image: url('./assets/welcome.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -156,4 +160,35 @@ span {
     .welcome-screen-container {
         display: none;
     }
+}
+
+@media screen and (max-width: 425px) {
+    .form-container {
+        width: 310px;
+    }
+
+    .form-container .login-container > h2 {
+        text-align:center;
+        font-size: 2.5rem;
+        margin: 20px 0 0;
+    }
+
+    .providers {
+        display: none;
+    }
+
+    .providers-icon {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .providers-icon img {
+        width: 50px;
+        margin: 10px;
+        cursor: pointer;
+    }
+
+
 }
