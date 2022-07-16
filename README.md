@@ -5,6 +5,6 @@
 ### Ccs
 
 * https://practica-css-formulario.netlify.app
-![img](ccs/assets/login.png)
+![img](./ccs/assets/login.png)
 * https://menu-vert.netlify.app/
-![img](ccs/assets/menu.png)
+![img](./ccs/assets/menu.png)
